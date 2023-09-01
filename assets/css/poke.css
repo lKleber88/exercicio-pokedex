@@ -1,0 +1,357 @@
+.title {
+    padding: auto;
+}
+
+.pokemons {
+    display: grid;
+    list-style: none;
+    grid-template-columns: 1fr;
+    margin: 0;
+    padding: 0;
+    
+}
+
+@media screen and (min-width: 650px) {
+    .lista {
+        
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.pokemon {
+    display: flex;
+    flex-direction: column;
+    margin: .5rem;
+    padding: 0px;
+    border-radius: 1rem;
+    
+}
+
+.pokemon .number {
+    color: #000;
+    opacity: .3;
+    text-align: right;
+    font-size: .625rem;
+}
+
+.pokemon .name {
+    text-transform: capitalize;
+    padding: 0 10px;
+    color: rgb(15, 8, 8);
+}
+
+.detail {
+    padding: 0 10px;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.types {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    
+}
+
+.type {
+    color: #2f2e2e;
+    box-sizing: border-box;
+    background-color: #00201a;
+    padding: .25rem .5rem;
+    margin: .25rem 0;
+    font-size: .625rem;
+    border-radius: 1rem;
+    filter: brightness(1.2);
+    opacity: 0.9;
+    text-align: center;
+   
+    
+}
+    
+
+img {
+    padding: 0;
+    margin: 0;
+    max-width: 100%;
+    height: 80px;
+    align-self: flex-end;
+    position: relative;
+    left: 0px;
+    top: .3px;
+
+}
+
+.pagination {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 1rem;
+}
+
+.pagination button {
+    padding: .25rem .5rem;
+    margin: .25rem 0;
+    font-size: .625rem;
+    color: #fff;
+    background-color: #6c79db;
+    border: none;
+    border-radius: 1rem;
+}
+
+@media screen and (min-width: 380px) {
+    .pokemons {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (min-width: 576px) {
+    .pokemons {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .pokemons {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+/* .bulbasaur {
+    width: 0px;
+    height: 0px;
+    align-self: flex-end;
+    position: relative;
+    left: -8px;
+    top: 35px;
+} */
+
+/* .ivysaur {
+    width: 160px;
+    align-self: flex-end;
+    position: relative;
+    left: 0px;
+    top: 0px;
+}
+
+.venusaur {
+    width: 150px;
+    align-self: flex-end;
+    position: relative;
+    left: -8px;
+    top: 0px;
+}
+
+.charmander {
+    width: 100px;
+    align-self: flex-end;
+    position: relative;
+    left: -8px;
+    top: 40px;
+}
+
+@media screen and (min-width: 440px) {
+    .charmander {
+        max-width: 100%;
+        width: 100px;
+        height: 50px;
+        align-self: flex-end;
+        position: relative;
+        left: -10px;
+        top: -50px;  
+    }
+}
+
+.charmeleon {
+    width: 160px;
+    align-self: flex-end;
+    position: relative;
+    left: -13px;
+    top: 30px;
+}
+
+@media screen and (min-width: 440px) {
+    .charmeleon {
+        max-width: 100%;
+        width: 180px;
+        height: 50px;
+        align-self: flex-end;
+        position: relative;
+        left: -10px;
+        top: -70px;  
+    }
+}
+
+.charizard {
+    max-width: 100%;
+    height: 150px;
+    align-self: flex-end;
+    position: relative;
+    left: 0px;
+    top: -30px;  
+}
+
+@media screen and (min-width: 440px) {
+    .charizard {
+        max-width: 100%;
+        width: 150px;
+        height: 50px;
+        align-self: flex-end;
+        position: relative;
+        left: -10px;
+        top: -90px;  
+    }
+}
+
+.squirtle {
+    max-width: 100%;
+    height: 80px;
+    align-self: flex-end;
+    position: relative;
+    left: 0px;
+    top: 0px;
+}
+
+@media screen and (min-width: 440px) {
+    .squirtle {
+        max-width: 100%;
+        width: 180px;
+        height: 50px;
+        align-self: flex-end;
+        position: relative;
+        left: -10px;
+        top: -60px;  
+    }
+}
+
+.wartortle {
+    max-width: 100%;
+    height: 150px;
+    align-self: flex-end;
+    position: relative;
+    left: 0px;
+    top: 15px;
+}
+
+@media screen and (min-width: 440px) {
+    .wartortle {
+        max-width: 100%;
+        width: 180px;
+        height: 50px;
+        align-self: flex-end;
+        position: relative;
+        left: -10px;
+        top: -80px;  
+    }
+}
+
+.blastoise {
+    padding: 0;
+    margin: 0;
+    max-width: 100%;
+    width: 180px;
+    align-self: flex-end;
+    position: relative;
+    left: 0px;
+    top: 0px;
+}
+
+@media screen and (min-width: 740px) {
+    .blastoise {
+        max-width: 100%;
+        width: 210px;
+        height: 50px;
+        align-self: flex-end;
+        position: relative;
+        left: -0px;
+        top: -80px;  
+    }
+} */
+
+.number {
+    color: #203d36;
+    opacity: .3;
+    text-align: right;
+    padding: 0;
+    position: relative;
+    left: -14px;
+    top: 5px;
+}
+
+.normal {
+    background-color: #a6a877;
+}
+
+.grass {
+    background-color: #46d1b1;
+}
+
+.fire {
+    background-color: #fb6c6c;
+}
+
+.water {
+    background-color: #85c5fe;
+}
+
+.electric {
+    background-color: #f7cf2e;
+}
+
+.ice {
+    background-color: #98d5d7;
+}
+
+.ground {
+    background-color: #dfbf69;
+}
+
+.flying {
+    background-color: #a98ff0;
+}
+
+.poison {
+    background-color: #a040a0;
+}
+
+.fighting {
+    background-color: #bf3029;
+}
+
+.psychic {
+    background-color: #f65687;
+}
+
+.dark {
+    background-color: #725847;
+}
+
+.rock {
+    background-color: #b8a137;
+}
+
+.bug {
+    background-color: #a8b720;
+}
+
+.ghost {
+    background-color: #6e5896;
+}
+
+.steel {
+    background-color: #b9b7cf;
+}
+
+.dragon {
+    background-color: #6f38f6;
+}
+
+.fairy {
+    background-color: #f9aec7;
+}
