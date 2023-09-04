@@ -18,7 +18,7 @@ function convertPokemonToHTML(pokemon) {
             ${pokemon.types.map((type) => `<li class="type ${type}">${type}</li>`).join('')}
             </ol>
             <a>
-                <img src="${pokemon.photo}"
+                img src="./Dio/Gif/dacanl0-6e602889-cbf4-492f-bcb-unscreen.gif"
                 alt="${pokemon.name}">
             </a>
 
