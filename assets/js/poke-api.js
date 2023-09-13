@@ -14,8 +14,8 @@ function convertPokeApiDetailToPokemon(pokeDetail) {
     pokemon.type = type
 
     
-    pokemon.gif = "C:\Dio\Gif\dacanl0-6e602889-cbf4-492f-bcb-unscreen.gif"
-    //pokemon.photo = pokeDetail.sprites.other.dream_world.front_default
+    //pokemon.gif = "C:\Dio\Gif\dacanl0-6e602889-cbf4-492f-bcb-unscreen.gif"
+    pokemon.photo = pokeDetail.sprites.other.dream_world.front_default
 
     return pokemon
 }
