@@ -7,6 +7,9 @@
 
 body {
     background-color: #f6f8fc;
+    background-image: url('https://1.bp.blogspot.com/-8P81E4mMHS0/XLPywtw0zhI/AAAAAAAABeU/Gt1tnHjpxwoHE12_j3WKa4L2K6cLWqe8ACEwYBhgL/s1600/BXaygYm.jpg');
+    background-position: center;
+    background-size: cover;
 }
 
 
@@ -20,5 +23,6 @@ body {
         margin: 0 auto;
         height: auto;
         border-radius: 1rem;
+        
     }
 }
